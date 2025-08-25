@@ -49,9 +49,22 @@ MAX_RESPONSE_TIME=10
 ```
 
 4. Start the bot:
+
+As a Python script:
 ```bash
 python src/main.py
 ```
+
+As a system service:
+```bash
+# Start the bot
+sudo systemctl start slackbot
+
+# Stop the bot
+sudo systemctl stop slackbot
+```
+
+For detailed operation instructions, see [Operations Manual](docs/operations.md).
 
 ## Usage
 

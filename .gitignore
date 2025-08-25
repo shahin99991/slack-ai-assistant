@@ -45,3 +45,6 @@ Thumbs.db
 
 # Service files
 slackbot.service
+
+# Personal documents
+docs/zenn-article.md
