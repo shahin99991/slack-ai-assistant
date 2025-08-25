@@ -1,26 +1,16 @@
-# Slack関連
-slack-bolt>=1.18.0
-slack-sdk>=3.26.0
+# Slack
+slack-bolt>=1.23.0
+slack-sdk>=3.36.0
 
-# Google AI (Gemini)
+# Google AI
 google-generativeai>=0.3.0
 
-# ベクトルデータベース
+# Vector Database
 chromadb>=0.4.0
 
-# ユーティリティ
+# Environment Variables
 python-dotenv>=1.0.0
+
+# Utilities
 pydantic>=2.0.0
-
-# テスト
-pytest>=7.4.0
-pytest-asyncio>=0.21.0
-pytest-cov>=4.1.0
-
-# 型チェック
-mypy>=1.5.0
-
-# リンター
-flake8>=6.1.0
-black>=23.7.0
-isort>=5.12.0
+typing-extensions>=4.5.0
