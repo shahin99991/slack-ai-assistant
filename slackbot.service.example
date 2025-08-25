@@ -1,0 +1,18 @@
+[Unit]
+Description=Slack AI Assistant Bot
+After=network.target
+
+[Service]
+# Replace with your username
+User=YOUR_USERNAME
+# Replace with your project path
+WorkingDirectory=/path/to/SlackAIBot
+# Replace with your virtual environment path
+Environment=PATH=/path/to/venv/bin
+ExecStart=/path/to/venv/bin/python src/main.py
+Restart=always
+StandardOutput=append:/var/log/slackbot.log
+StandardError=append:/var/log/slackbot.error.log
+
+[Install]
+WantedBy=multi-user.target

@@ -42,3 +42,6 @@ logs/
 # OS specific
 .DS_Store
 Thumbs.db
+
+# Service files
+slackbot.service
