@@ -91,6 +91,13 @@ class SlackAIBot:
             event: The Slack event data
         """
         try:
+            # 重複イベントのチェック
+            event_id = event.get("event_ts", "")
+            if hasattr(self, '_last_event_id') and self._last_event_id == event_id:
+                logger.debug("Skipping duplicate event: %s", event_id)
+                return
+            self._last_event_id = event_id
+
             logger.debug("Received mention event: %s", event)
             # Extract the question (remove the mention)
             mention_pattern = f"<@{self.bot_user_id}>"
